@@ -1,0 +1,2 @@
+# ubunto
+minhas configurações ubunto
