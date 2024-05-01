@@ -1,5 +1,5 @@
-# ubunto
-minhas configurações ubunto
+# ubuntu
+minhas configurações ubuntu
 
 
 ## configurado credenciais do linux
