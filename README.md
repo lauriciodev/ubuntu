@@ -13,7 +13,7 @@ https://github.com/GitCredentialManager/git-credential-manager/releases/tag/v2.0
 #baixar o gcm-linux_amd64.2.0.886.tar.gz
 ```
 
-tar -xvf <nome do aruivo baixado> -C /usr/local/bin
+tar -xvf gcm-linux_amd64.2.0.886.tar.gz -C /usr/local/bin
 git-credential-manager configure
 
 
