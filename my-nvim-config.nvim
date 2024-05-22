@@ -1,0 +1,27 @@
+call plug#begin()
+Plug 'scrooloose/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'nathanaelkane/vim-indent-guides'
+call plug#end()
+
+
+
+syntax enable
+set number
+set mouse=a
+set relativenumber
+set background=dark
+
+colorscheme gruvbox
+
+
+nnoremap <C-o> :NERDTreeToggle <cr>
+nnoremap <C-q> :q! <cr>
+
+nnoremap <F8> :TagbarToggle<CR>
+
+nnoremap <C-g>:IndentGuidesTogglejutsushi<cr>
+
+
+nnoremap <C-s> :w! <cr>
+
