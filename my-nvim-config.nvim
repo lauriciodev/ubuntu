@@ -1,29 +1,61 @@
+cat init.vim                  
+
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'neovim/nvim-lspconfig'
+Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
-
+filetype plugin indent on
 
 syntax enable
 set number
 set mouse=a
-set relativenumber
+" set relativenumber
 set background=dark
+set autoindent
+set showbreak=+++
+set linebreak
+set textwidth=100
+
 
 colorscheme gruvbox
 
+let g:indent_guides_enable_on_vim_startup = 1
+
+let g:indent_guides_auto_colors = 1
+autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesOdd  guibg=green   ctermbg=1
+autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesEven guibg=yellow ctermbg=1
+
+
+"desativando teclas de navegação no modo visual
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+"=================================
 
 nnoremap <C-o> :NERDTreeToggle <cr>
 nnoremap <C-q> :q! <cr>
-
 nnoremap <F8> :TagbarToggle<CR>
+
+"define tamanho de janela
+nnoremap <M-j> :resize -2<CR>
+nnoremap <M-k> :resize +2<CR>
+nnoremap <M-n> :vertical resize -2<CR>
+nnoremap <M-j> :vertical resize +2<CR>
+
+
+
 
 nnoremap <C-g>:IndentGuidesTogglejutsushi<cr>
 
 
 nnoremap <C-s> :w! <cr>
-
-//instalando vim-plug
-wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
