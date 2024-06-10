@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin() 
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
@@ -8,7 +8,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'neovim/nvim-lspconfig'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+
 call plug#end()
+
+
+
 
 filetype plugin indent on
 
@@ -22,15 +29,31 @@ set showbreak=+++
 set linebreak
 set textwidth=100
 
+"=========thema==================
 
-colorscheme gruvbox
+" satando thema
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
-let g:indent_guides_enable_on_vim_startup = 1
+let g:airline_theme='bubblegum'
 
-let g:indent_guides_auto_colors = 1
-autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesOdd  guibg=green   ctermbg=1
-autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesEven guibg=yellow ctermbg=1
 
+
+"setando tema
+
+"colorscheme gruvbox
+"let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_auto_colors = 1
+"autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesOdd  guibg=green   ctermbg=1
+"autocmd VimEnter,Colorscheme gruvbox :hi IndentGuidesEven guibg=yellow ctermbg=1
+
+
+"setando thema
+colorscheme nord
+
+
+"================================
 
 "desativando teclas de navegação no modo visual
 noremap <Up> <NOP>
